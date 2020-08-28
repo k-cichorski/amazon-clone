@@ -1,0 +1,58 @@
+[
+  {
+    "id": 525125116,
+    "title": "Blink Mini - smart security camera",
+    "price": 39.99,
+    "rating": 4,
+    "image": "https://images-eu.ssl-images-amazon.com/images/G/02/kindle/journeys/NTkzOGQ5NWIt/NTkzOGQ5NWIt-ZDg5YjE2Nzkt-w379._SY304_CB433208462_.jpg"
+  },
+  {
+    "id": 568432222,
+    "title": "Wireless Charger",
+    "price": 50.20,
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/I/31OHRGAoxiL._AC_SY480_.jpg"
+  },
+  {
+    "id": 234666232,
+    "title": "Echo Auto",
+    "price": 70.49,
+    "rating": 5,
+    "image": "https://images-eu.ssl-images-amazon.com/images/G/02/kindle/journeys/NTg4MTg2YTQt/NTg4MTg2YTQt-ZGI5NWU3ZmMt-w758._SY608_CB409095718_.jpg"
+  },
+  {
+    "id": 852132466,
+    "title": "5 random books",
+    "price": 19.99,
+    "rating": 2,
+    "image": "https://images-eu.ssl-images-amazon.com/images/G/02/kindle/content/merch/2020/kmd/august/XCM_CUTTLE_1238341_1258842_UK_3224688_758x608_2X_en_GB._SY608_CB407904645_.jpg"
+  },
+  {
+    "id": 478127721,
+    "title": "Canon EOS 2000D",
+    "price": 398.99,
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/I/613WC3OoLFL._AC._SR360,460.jpg"
+  },
+  {
+    "id": 757211896,
+    "title": "Crocodile Seesaw",
+    "price": 29.99,
+    "rating": 3,
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/616SwwwfKaL._AC_SY400_.jpg"
+  },
+  {
+    "id": 578761128,
+    "title": "Football + Pump",
+    "price": 19.49,
+    "rating": 2,
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/71xJIimhx7L._AC_SY400_.jpg"
+  },
+  {
+    "id": 646124124,
+    "title": "Helmet with LED stripe",
+    "price": 42.00,
+    "rating": 5,
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/81XjbYToReL._AC_SY400_.jpg"
+  }
+]

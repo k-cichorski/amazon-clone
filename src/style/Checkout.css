@@ -1,0 +1,24 @@
+.checkout-ad {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.checkout-ad-container {
+    overflow: hidden;
+}
+
+.checkout {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto 20px auto;
+    height: max-content;
+}
+
+@media (max-device-width: 500px) {
+    .checkout {
+        flex-direction: column;
+    }
+    .checkout-right {
+        margin: auto;
+    }
+}
