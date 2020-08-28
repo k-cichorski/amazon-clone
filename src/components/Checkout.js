@@ -4,7 +4,7 @@ import {useStateValue} from "../store/StateProvider";
 import '../style/Checkout.css';
 import CheckoutProduct from './CheckoutProduct';
 import Subtotal from './Subtotal';
-import RemovedItem from "./RemovedItem";
+import ItemNotification from "./ItemNotification";
 
 function Checkout() {
     const [{basket, removedItem}] = useStateValue();
@@ -49,7 +49,7 @@ function Checkout() {
                     </div>
                 )
             }
-            {removedItem && (<RemovedItem itemName={removedItem}/>)}
+            {removedItem && (<ItemNotification itemName={removedItem} itemAction={'removed from Basket!'}/>)}
         </div>
     )
 }

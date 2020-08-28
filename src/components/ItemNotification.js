@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {useStateValue} from "../store/StateProvider";
 import {RESET_REMOVED_ITEM} from "../store/reducer";
-import '../style/RemovedItem.css';
+import '../style/ItemNotification.css';
 
 
-function RemovedItem({itemName}) {
+function ItemNotification({itemName, itemAction}) {
     const [, dispatch] = useStateValue();
 
     useEffect(() => {
@@ -24,10 +24,10 @@ function RemovedItem({itemName}) {
     return (
         <div className="removed-item">
             <div className="removed-item-info">
-                <p><strong>{itemName}</strong> removed from Basket!</p>
+                <p><strong>{itemName}</strong> {itemAction}</p>
             </div>
         </div>
     );
 }
 
-export default RemovedItem;
+export default ItemNotification;

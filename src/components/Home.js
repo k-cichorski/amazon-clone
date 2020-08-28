@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/Home.css';
 
 import Product from './Product';
-import AddedItem from './AddedItem';
+import ItemNotification from "./ItemNotification";
 import products from '../products.json';
 import {useStateValue} from "../store/StateProvider";
 import {useMediaQuery} from "react-responsive";
@@ -63,7 +63,7 @@ export default function Home() {
                 )
             }
 
-            {addedItem && <AddedItem itemName={addedItem}/> }
+            {addedItem && <ItemNotification itemName={addedItem} itemAction={'added to Basket!'}/> }
         </div>
     )
 };
