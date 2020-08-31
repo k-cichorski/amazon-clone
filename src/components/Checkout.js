@@ -7,7 +7,7 @@ import Subtotal from './Subtotal';
 import ItemNotification from "./ItemNotification";
 
 function Checkout() {
-    const [{basket, removedItem}] = useStateValue();
+    const [{basket, itemNotification}] = useStateValue();
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
@@ -49,7 +49,7 @@ function Checkout() {
                     </div>
                 )
             }
-            {removedItem && (<ItemNotification itemName={removedItem} itemAction={'removed from Basket!'}/>)}
+            {itemNotification && (<ItemNotification itemName={itemNotification} itemAction={'removed from Basket!'}/>)}
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useStateValue} from "../store/StateProvider";
-import {RESET_REMOVED_ITEM} from "../store/reducer";
+import {RESET_ITEM} from "../store/reducer";
 import '../style/ItemNotification.css';
 
 
@@ -16,9 +16,9 @@ function ItemNotification({itemName, itemAction}) {
 
     const resetItem = () => {
         const action = {
-            type: RESET_REMOVED_ITEM
+            type: RESET_ITEM
         }
-        dispatch(action)
+        dispatch(action);
     }
 
     return (

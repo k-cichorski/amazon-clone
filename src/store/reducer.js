@@ -1,14 +1,12 @@
 export const initialState = {
     basket: [],
-    removedItem: null,
-    addedItem: null,
+    itemNotification: null,
     user: null,
 };
 
 export const ADD_TO_BASKET = 'ADD_TO_BASKET';
 export const REMOVE_FROM_BASKET = 'REMOVE_FROM_BASKET';
-export const RESET_REMOVED_ITEM = 'RESET_REMOVED_ITEM';
-export const RESET_ADDED_ITEM = 'RESET_ADDED_ITEM';
+export const RESET_ITEM = 'RESET_ADDED_ITEM';
 export const SET_USER = 'SET_USER';
 
 export const getBasketValue = (basket) => {
@@ -26,7 +24,7 @@ function reducer(state, action) {
             return {
                 ...state,
                 basket: [...state.basket, action.item],
-                addedItem: action.item.title
+                itemNotification: action.item.title
             }
         case REMOVE_FROM_BASKET:
             let newBasket = [...state.basket];
@@ -37,17 +35,12 @@ function reducer(state, action) {
             return {
                 ...state,
                 basket: newBasket,
-                removedItem: action.title
+                itemNotification: action.title
             }
-        case RESET_REMOVED_ITEM:
+        case RESET_ITEM:
             return {
                 ...state,
-                removedItem: null
-            }
-        case RESET_ADDED_ITEM:
-            return {
-                ...state,
-                addedItem: null
+                itemNotification: null
             }
         default:
             return state;

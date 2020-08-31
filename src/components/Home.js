@@ -8,7 +8,7 @@ import {useStateValue} from "../store/StateProvider";
 import {useMediaQuery} from "react-responsive";
 
 export default function Home() {
-    const [{addedItem}] = useStateValue();
+    const [{itemNotification}] = useStateValue();
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 570px)' })
 
     const getProducts = (products) => {
@@ -63,7 +63,7 @@ export default function Home() {
                 )
             }
 
-            {addedItem && <ItemNotification itemName={addedItem} itemAction={'added to Basket!'}/> }
+            {itemNotification && <ItemNotification itemName={itemNotification} itemAction={'added to Basket!'}/> }
         </div>
     )
 };
