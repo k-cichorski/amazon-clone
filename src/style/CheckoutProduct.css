@@ -1,9 +1,14 @@
 .checkout-product {
     display: flex;
     margin-top: 10px;
-    background-color: #f3f3f3;
+    background-color: white;
     border: 1px solid #dddddd;
     border-radius: 3px;
+    transition: transform 100ms;
+}
+
+.checkout-product:hover {
+    transform: scale(1.05);
 }
 
 .checkout-product-image {
@@ -29,4 +34,13 @@
     margin-top: 15px;
     float: bottom;
     padding: 2px 5px;
+}
+
+@media (max-width: 500px) {
+    .checkout-product {
+        overflow-x: hidden;
+    }
+    .checkout-product:hover {
+        transform: none;
+    }
 }

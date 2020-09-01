@@ -5,7 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import {useStateValue} from "../store/StateProvider";
 import {auth} from '../firebase';
-import {useMediaQuery} from "react-responsive";
+import useMediaQuery from "react-responsive";
 
 function Header() {
     const [{basket, user}] = useStateValue();

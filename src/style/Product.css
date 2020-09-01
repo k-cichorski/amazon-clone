@@ -5,10 +5,15 @@
     background-color: white;
     margin: 10px;
     z-index: 1;
-    width: 100%;
+    width: 400px;
     max-width: fit-content;
     padding: 20px;
     align-items: center;
+    transition: transform 100ms;
+}
+
+.product:hover {
+    transform: scale(1.05);
 }
 
 
@@ -17,7 +22,11 @@
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
-    padding: 2px 5px;
+    padding: 2px 5px
+}
+
+.product > button:hover {
+    cursor: pointer;
 }
 
 .product-info {
@@ -46,6 +55,10 @@
 @media (max-width: 500px) {
     .product {
         margin: 5px 0;
+        overflow-x: hidden;
+    }
+    .product:hover {
+        transform: none;
     }
     .product-row {
         flex-flow: column;

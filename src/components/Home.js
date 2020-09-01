@@ -14,7 +14,8 @@ export default function Home() {
     const getProducts = (products) => {
         let productArray = [];
         products.forEach(({id, title, price, rating, image}) => {
-            productArray.push(<Product key={id}
+            productArray.push(<Product
+                     key={id}
                      id={id}
                      title={title}
                      price={price}
